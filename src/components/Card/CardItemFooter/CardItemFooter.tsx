@@ -1,5 +1,6 @@
 import React from "react";
 import { Weather } from "../../../interfaces/Weather";
+import { formatUnixTime } from "../../../utils/formatters";
 
 import { StyledCardItemFooter, ExtraContent } from "./styles";
 
@@ -21,7 +22,7 @@ const CardItemFooter: React.FC<Props> = ({ children, weather, showExtraData }) =
           <span>{weather.main.pressure}</span><small>hPa</small>
         </div>
       </ExtraContent>}
-      Updated at 00:00:00
+      Updated at {formatUnixTime(weather.dt)}
     </StyledCardItemFooter>
   );
 };
