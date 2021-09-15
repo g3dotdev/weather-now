@@ -1,8 +1,8 @@
-import { CardItem, CardGroup } from "../Card";
-import Content from "../Content/Content";
-import Header from "../Header/Header";
+import { CardItem, CardGroup } from "../../components/Card";
+import Content from "../../components/Content/Content";
+import Header from "../../components/Header/Header";
 
-const App: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <>
       <Header />
@@ -17,4 +17,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default Home;

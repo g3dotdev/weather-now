@@ -16,7 +16,7 @@ const CardItem: React.FC<Props> = ({ city, isFeatured }) => {
     if (!error) {
       const interval = setInterval(() => {
         refetch();
-      }, 3 * 1000);
+      }, 10 * 60 * 1000);
 
       return () => clearInterval(interval)
     }
