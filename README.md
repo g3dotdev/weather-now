@@ -30,8 +30,8 @@ A aplicação utiliza o [`Yarn`](https://yarnpkg.com/) para gerenciamento de sua
 
 Você pode instalar o Yarn através do comando abaixo:
 
-```console
-$ npm i -g yarn
+```bash
+npm i -g yarn
 ```
 
 > Necessário Node >= 10
@@ -40,8 +40,8 @@ Após a instalação e [configuração da API](#api-openweather), realize a inst
 
 Utilize o comando abaixo para realizar a instalação das dependências
 
-```console
-$ yarn install
+```bash
+yarn install
 ```
 
 ## Scripts disponíveis
@@ -54,22 +54,22 @@ Toda alteração executada no código resultará no recarregamento da página.
 
 Qualquer erro disparado pelo `linter` será escrito no terminal.
 
-```console
-$ yarn start
+```bash
+yarn start
 ```
 
 ### Executar a suíte de testes
 
 Executa a suíte de testes da aplicação em modo iterativo.
 
-```console
-$ yarn test
+```bash
+yarn test
 ```
 
 ### Build para produção
 
 Gera um bundle otimizado e minifcado da aplicação para ser liberado em produção.
 
-```console
-$ yarn build
+```bash
+yarn build
 ```
