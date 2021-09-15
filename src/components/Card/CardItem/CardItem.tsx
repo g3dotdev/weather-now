@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { CardItemFooter, CardItemHeader, CardItemLoader, CardItemTemperature } from "..";
-import { Weather } from "../../../interfaces/Weather";
-import { api } from "../../../utils/api";
-
+import React, { useEffect } from "react";
+import { CardItemError, CardItemFooter, CardItemHeader, CardItemLoader, CardItemTemperature } from "..";
+import { useWeather } from "../../../hooks/weather";
 import { StyledCard } from "./styles";
+
 
 type Props = {
   city: string
@@ -11,31 +10,19 @@ type Props = {
 }
 
 const CardItem: React.FC<Props> = ({ city, isFeatured }) => {
-  const [weather, setWeather] = useState<Weather | null>(null);
-
-  const fetchWeather = async (city: string) => {
-    console.log(`fetchWeather ${city}`);
-    setWeather(null);
-
-    const res = await api.get<Weather>(`&q=${city}`);
-
-    const data = await res.data;
-
-    setWeather(data);
-  }
+  const { data, loading, error, refetch } = useWeather(city);
 
   useEffect(() => {
-    fetchWeather(city)
+    if (!error) {
+      const interval = setInterval(() => {
+        refetch();
+      }, 3 * 1000);
 
-    const interval = setInterval(() => {
-      setWeather(null);
-      fetchWeather(city);
-    }, 3 * 1000);
+      return () => clearInterval(interval)
+    }
+  }, [refetch, error]);
 
-    return () => clearInterval(interval);
-  }, [city]);
-
-  if (!weather) {
+  if (loading) {
     return (
       <StyledCard>
         <CardItemHeader city={city} />
@@ -44,11 +31,20 @@ const CardItem: React.FC<Props> = ({ city, isFeatured }) => {
     )
   }
 
+  if (error || !data) {
+    return (
+      <StyledCard>
+        <CardItemHeader city={city} />
+        <CardItemError refetch={refetch} />
+      </StyledCard>
+    )
+  }
+
   return (
     <StyledCard>
       <CardItemHeader city={city} />
-      <CardItemTemperature temperature={weather.main.temp} />
-      <CardItemFooter weather={weather} showExtraData={isFeatured} />
+      <CardItemTemperature temperature={data.main.temp} />
+      <CardItemFooter weather={data} showExtraData={isFeatured} />
     </StyledCard>
   );
 };
