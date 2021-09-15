@@ -6,7 +6,7 @@ export const StyledContent = styled.main`
 
   display: flex;
 
-  padding-top: 64px;
+  padding-top: 4rem;
 
   align-items: center;
   justify-content: center;

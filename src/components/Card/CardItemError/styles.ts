@@ -17,7 +17,7 @@ export const StyledCardItemError = styled.header`
     border: 2px solid var(--text-color);
     border-radius: 20px;
 
-    padding: 10px 15px;
+    padding: 0.625rem 1rem;
 
     &:hover {
       background-color: var(--text-color);

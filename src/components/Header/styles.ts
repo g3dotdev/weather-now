@@ -13,5 +13,5 @@ export const StyledHeader = styled.header`
   position: fixed;
   top: 0;
 
-  padding: 20px;
+  padding: 1.25rem;
 `;
