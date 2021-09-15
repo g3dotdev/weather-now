@@ -1,5 +1,7 @@
 # ![Weather Now](./src/assets/images/logo.svg)
 
+[![CI/CD](https://github.com/devguih/weather-now/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/devguih/weather-now/actions/workflows/ci-cd.yml)
+
 Aplicação desenvolvida para exibir a previsão do tempo para as cidades de Nuuk, Urubici e Nairobi.
 
 A aplicação está escrita em TypeScript e React.
