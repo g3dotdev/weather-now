@@ -41,7 +41,7 @@ npm i -g yarn
 
 > Necessário Node >= 10
 
-Após a instalação e [configuração da API](#api-openweather), realize a instalação das dependências da aplicação.
+Após a instalação e [configuração da API](#pré-configuração), realize a instalação das dependências da aplicação.
 
 Utilize o comando abaixo para realizar a instalação das dependências
 
