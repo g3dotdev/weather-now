@@ -12,7 +12,7 @@ const mock = {
     "humidity": 95
   },
   "visibility": 9000,
-  "dt": 1631760111,
+  "dt": 1631767504,
   "timezone": -10800,
   "id": 3459712,
   "name": "Joinville",
@@ -22,7 +22,7 @@ const mock = {
 describe('Card Footer', () => {
   test('Renders correct time', () => {
     render(<CardItemFooter weather={mock} />);
-    const element = screen.getByText(/Updated at 6:16:00 PM/i);
+    const element = screen.getByText(/Updated at 1:45:04 AM/i);
     expect(element).toBeInTheDocument();
   });
 

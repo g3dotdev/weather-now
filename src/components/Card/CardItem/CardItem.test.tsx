@@ -17,7 +17,7 @@ const server = setupServer(
         "humidity": 95
       },
       "visibility": 9000,
-      "dt": 1631760111,
+      "dt": 1631767504,
       "timezone": -10800,
       "id": 3459712,
       "name": "Joinville",
@@ -40,7 +40,7 @@ describe('Card Item', () => {
     await waitFor(() => screen.getByRole('heading'));
 
     const temperature = screen.getByRole('heading');
-    const footer = screen.getByText(/Updated at 6:16:00 PM/i);
+    const footer = screen.getByText(/Updated at 1:45:04 AM/i);
 
     expect(temperature).toHaveTextContent('15º');
     expect(footer).toBeInTheDocument();

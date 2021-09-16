@@ -2,8 +2,8 @@ import { formatUnixTime } from "./Formatters";
 
 describe("Formatters", () => {
   test("Format UNIX timestamp to locale date", () => {
-    const data = formatUnixTime(1631760111);
+    const data = formatUnixTime(1631767504);
 
-    expect(data).toBe("6:16:00 PM");
+    expect(data).toBe("1:45:04 AM");
   });
 });
