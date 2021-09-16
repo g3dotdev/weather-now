@@ -2,7 +2,7 @@ import { setup } from "axios-cache-adapter";
 import useAxios, { configure } from "axios-hooks";
 import CacheAdapter from "../utils/CacheAdapter";
 
-const cacheAdapter = new CacheAdapter();
+const cacheAdapter = new CacheAdapter(localStorage);
 
 const axios = setup({
   baseURL: `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}&units=metric&`,

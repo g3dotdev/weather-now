@@ -3,8 +3,8 @@ export default class CacheAdapter {
 
   private prefix: string;
 
-  constructor() {
-    this.store = localStorage;
+  constructor(store: any) {
+    this.store = store;
     this.prefix = "weather/";
   }
 
