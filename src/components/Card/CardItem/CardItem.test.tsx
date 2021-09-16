@@ -40,7 +40,7 @@ describe('Card Item', () => {
     await waitFor(() => screen.getByRole('heading'));
 
     const temperature = screen.getByRole('heading');
-    const footer = screen.getByText(/Updated at 9:16:00 PM/i);
+    const footer = screen.getByText(/Updated at 6:16:00 PM/i);
 
     expect(temperature).toHaveTextContent('15º');
     expect(footer).toBeInTheDocument();
