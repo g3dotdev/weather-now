@@ -1,6 +1,7 @@
 # <img src="./src/assets/images/logo.svg" width="400px" height="60" alt="Logo da aplicação">
 
 [![Build](https://github.com/devguih/weather-now/actions/workflows/build.yml/badge.svg)](https://github.com/devguih/weather-now/actions/workflows/build.yml)
+[![Test](https://github.com/devguih/weather-now/actions/workflows/test.yml/badge.svg)](https://github.com/devguih/weather-now/actions/workflows/test.yml)
 
 Aplicação desenvolvida para exibir a previsão do tempo para as cidades de Nuuk, Urubici e Nairobi.
 

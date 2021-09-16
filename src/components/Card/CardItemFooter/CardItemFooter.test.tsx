@@ -22,7 +22,7 @@ const mock = {
 describe('Card Footer', () => {
   test('Renders correct time', () => {
     render(<CardItemFooter weather={mock} />);
-    const element = screen.getByText(/Updated at 6:16:00 PM/i);
+    const element = screen.getByText(/Updated at 9:16:00 PM/i);
     expect(element).toBeInTheDocument();
   });
 
