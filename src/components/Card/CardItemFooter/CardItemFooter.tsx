@@ -1,11 +1,11 @@
 import React from "react";
-import { Weather } from "../../../interfaces/Weather";
-import { formatUnixTime } from "../../../utils/formatters";
+import { IWeather } from "../../../interfaces/IWeather";
+import { formatUnixTime } from "../../../utils/Formatters";
 
 import { StyledCardItemFooter, ExtraContent } from "./styles";
 
 type Props = {
-  weather: Weather
+  weather: IWeather
   showExtraData?: boolean
 }
 
@@ -13,11 +13,11 @@ const CardItemFooter: React.FC<Props> = ({ children, weather, showExtraData }) =
   return (
     <StyledCardItemFooter>
       {showExtraData && <ExtraContent>
-        <div>
+        <div title={`${weather.main.humidity}%`}>
           <h3>Humidity</h3>
           <span>{weather.main.humidity}</span><small>%</small>
         </div>
-        <div>
+        <div title={`${weather.main.pressure}hPa`}>
           <h3>Pressure</h3>
           <span>{weather.main.pressure}</span><small>hPa</small>
         </div>

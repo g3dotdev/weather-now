@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { CardItemError, CardItemFooter, CardItemHeader, CardItemLoader, CardItemTemperature } from "..";
-import { useWeather } from "../../../hooks/weather";
+import { useWeather } from "../../../hooks/useWeather";
 import { StyledCard } from "./styles";
 
 

@@ -10,6 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
     <FontFaceStyles />
+
     <Home />
   </React.StrictMode>,
   document.getElementById('root')

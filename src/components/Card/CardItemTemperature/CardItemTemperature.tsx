@@ -3,7 +3,7 @@ import React from "react";
 import { StyledCardItemTemperature, TemperatureColors } from "./styles";
 
 const getTemperatureColor = (temperature: number) => {
-  if (temperature < 5) {
+  if (temperature <= 5) {
     return TemperatureColors.LOW;
   }
 

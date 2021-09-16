@@ -2,7 +2,7 @@ import { CardItem, CardGroup } from "../../components/Card";
 import Content from "../../components/Content/Content";
 import Header from "../../components/Header/Header";
 
-const Home: React.FC = () => {
+export const Home: React.FC = () => {
   return (
     <>
       <Header />

@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import { CardItemHeader } from '..';
 
-test('renders learn react link', () => {
-  render(<CardItemHeader city="Test" />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('Card Header', () => {
+  test('Render the correct city', () => {
+    render(<CardItemHeader city="Joinville" />);
+    const element = screen.getByText(/Joinville/i);
+    expect(element).toBeInTheDocument();
+  });
 });
