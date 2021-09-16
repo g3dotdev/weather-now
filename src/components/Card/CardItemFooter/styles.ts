@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledCardItemFooter = styled.footer`
   background-color: var(--card-footer);
-  padding: 0.875rem;
+  padding: 0.875rem 1.85rem;
 
   font-size: 0.625rem;
   color: var(--text-muted);
