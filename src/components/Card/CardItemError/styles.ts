@@ -5,8 +5,12 @@ export const StyledCardItemError = styled.header`
   padding: 2rem;
 
   h3 {
+    font-size: 1rem;
+    font-weight: 500;
+
     color: var(--text-red);
-    margin-bottom: 10px;
+
+    margin-bottom: 1rem;
   }
 
   button {
