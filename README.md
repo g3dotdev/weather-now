@@ -17,6 +17,8 @@ A API exige a informação de um token de autenticação para consulta de seus d
 
 Utilize [esse link](https://home.openweathermap.org/api_keys) para realizar seu cadastro e obter um token de acesso.
 
+> A API do OpenWeather leva alguns minutos para liberar a chave para uso após sua criação
+
 Após obter seu token, você pode criar um arquivo `.env` na raiz do projeto e adicionar nele sua chave conforme exemplo abaixo:
 
 ```properties
