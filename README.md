@@ -1,4 +1,4 @@
-# <img src="./src/assets/images/logo.svg" width="400px" height="60" alt="Logo da aplicação">
+# <img src="./public/assets/images/logo.svg" width="400px" height="60" alt="Logo da aplicação">
 
 [![Build](https://github.com/devguih/weather-now/actions/workflows/build.yml/badge.svg)](https://github.com/devguih/weather-now/actions/workflows/build.yml)
 [![Test](https://github.com/devguih/weather-now/actions/workflows/test.yml/badge.svg)](https://github.com/devguih/weather-now/actions/workflows/test.yml)
